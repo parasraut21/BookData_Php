@@ -15,6 +15,7 @@
     </style>
 </head>
 <body>
+    
     <div class="container my-4">
         <header class="d-flex justify-content-between my-4">
             <h1>Book List</h1>
@@ -24,6 +25,10 @@
         </header>
         <?php
         session_start();
+        if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
+{
+    header("location: login.php");
+}
         if (isset($_SESSION["create"])) {
         ?>
         <div class="alert alert-success">

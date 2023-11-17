@@ -1,6 +1,6 @@
 <?php
-$dbName = "blist";
-$dbHost = "localhost";
+$dbName = "crud";
+$dbHost = "localhost:3307";
 $dbUser = "root";
 $dbPass = "";
 $conn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
